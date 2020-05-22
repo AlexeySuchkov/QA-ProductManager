@@ -18,7 +18,7 @@ class ProductRepositoryTest {
     private Product item5 = new Smartphone(5, 15000, "K 10000", "Oukitel");
     private Product item6 = new Smartphone(6, 30000, "iPhone SE", "Apple");
 
-    private Product addItem = new Book(50, 450, "The Great Gatsy", "F. Scott Fitzgerald");
+    private Product addItem = new Book(50, 450, "The Great Gatsby", "F. Scott Fitzgerald");
 
     @BeforeEach
     void setUp() {
