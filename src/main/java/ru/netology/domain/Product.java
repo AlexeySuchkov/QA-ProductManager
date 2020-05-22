@@ -1,8 +1,8 @@
 package ru.netology.domain;
 
+import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -11,5 +11,9 @@ public class Product {
     private int id;
     private int price;
     private String name;
+
+    public boolean matches(String search) {
+        return this.getName().matches(search);
+    }
 }
 
