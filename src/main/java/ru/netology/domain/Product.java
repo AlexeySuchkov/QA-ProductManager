@@ -13,7 +13,10 @@ public class Product {
     private String name;
 
     public boolean matches(String search) {
-        return this.getName().matches(search);
+        if (this.getName().equalsIgnoreCase(search)) {
+            return true;
+        }
+        return false;
     }
 }
 
