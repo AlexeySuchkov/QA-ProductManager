@@ -1,12 +1,11 @@
 package ru.netology.manager;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import ru.netology.domain.Product;
 import ru.netology.repository.ProductRepository;
 
 @AllArgsConstructor
-@Data
+
 public class ProductManager {
     private ProductRepository repository;
 
